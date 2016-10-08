@@ -22,6 +22,12 @@ public class DemoApplication {
 		return String.format("Hello World! Im on this environment: %s", myEnv);
 	}
 
+	@RequestMapping("/thomas")
+	@ResponseBody
+	String thomas() {
+		return "Hello Thomas";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
